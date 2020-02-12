@@ -40,8 +40,8 @@
             this.lblAnswerSerie.AutoSize = true;
             this.lblAnswerSerie.BackColor = System.Drawing.Color.Transparent;
             this.lblAnswerSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnswerSerie.ForeColor = System.Drawing.Color.White;
-            this.lblAnswerSerie.Location = new System.Drawing.Point(20, 132);
+            this.lblAnswerSerie.ForeColor = System.Drawing.Color.Black;
+            this.lblAnswerSerie.Location = new System.Drawing.Point(20, 72);
             this.lblAnswerSerie.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblAnswerSerie.Name = "lblAnswerSerie";
             this.lblAnswerSerie.Size = new System.Drawing.Size(29, 24);
@@ -50,7 +50,7 @@
             // 
             // btnencontrara
             // 
-            this.btnencontrara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnencontrara.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.btnencontrara.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnencontrara.ForeColor = System.Drawing.Color.Black;
             this.btnencontrara.Location = new System.Drawing.Point(351, 18);
@@ -60,12 +60,13 @@
             this.btnencontrara.TabIndex = 14;
             this.btnencontrara.Text = "Calcular X";
             this.btnencontrara.UseVisualStyleBackColor = false;
+            this.btnencontrara.Click += new System.EventHandler(this.btnencontrara_Click);
             // 
             // txtSerie
             // 
-            this.txtSerie.BackColor = System.Drawing.Color.Black;
+            this.txtSerie.BackColor = System.Drawing.Color.White;
             this.txtSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSerie.ForeColor = System.Drawing.Color.White;
+            this.txtSerie.ForeColor = System.Drawing.Color.Black;
             this.txtSerie.Location = new System.Drawing.Point(102, 20);
             this.txtSerie.Margin = new System.Windows.Forms.Padding(1);
             this.txtSerie.Name = "txtSerie";
@@ -77,7 +78,7 @@
             this.lblSerie.AutoSize = true;
             this.lblSerie.BackColor = System.Drawing.Color.Transparent;
             this.lblSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSerie.ForeColor = System.Drawing.Color.White;
+            this.lblSerie.ForeColor = System.Drawing.Color.Black;
             this.lblSerie.Location = new System.Drawing.Point(20, 23);
             this.lblSerie.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblSerie.Name = "lblSerie";
