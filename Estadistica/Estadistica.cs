@@ -22,28 +22,19 @@ namespace Estadistica
         }
 
 
-        public double Armonica(string[] Serie)
-        {
-            double Suma = 0;
-            foreach (string valor in Serie)
-            {
-                Suma += 1 / int.Parse(valor);
-            }
-            return Serie.Length / Suma;
-
-
-        }
-        public double tipica(string[] serie)
+        public double estandar(String[] serie)
         {
             double media_aritmetica = Media(serie),
-                Suma = 0,
-                estandar = 0;
+                suma = 0;
             foreach (string valor in serie)
             {
-                Suma += Math.Pow(double.Parse(valor) - media_aritmetica, 2);
+                suma += Math.Pow(double.Parse(valor) - media_aritmetica, 2);
             }
-            estandar = Suma / serie.Length;
-            return Math.Sqrt(estandar);
+            return suma / serie.Length;
+        }
+        public double tipica(String[] serie)
+        {
+            return Math.Sqrt(estandar(serie));
         }
     }
 }

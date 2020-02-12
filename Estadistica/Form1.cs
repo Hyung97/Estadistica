@@ -30,13 +30,13 @@ namespace Estadistica
 
         private void btnencontrar_Click(object sender, EventArgs e)
         {
-            lblAnswer.Text = "X=: " +  objEstadistica.tipica(txtSerie.Text.Split(',')).ToString();
+            lblAnswer.Text = "X=: " +  objEstadistica.estandar(txtSerie.Text.Split(',')).ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             lblAnswer.Text = "X=: " +
-              Math.Round(objEstadistica.Armonica(txtSerie.Text.Split(',')), 2).ToString();
+              Math.Round(objEstadistica.tipica(txtSerie.Text.Split(',')), 2).ToString();
         }
 
         private void lblAnswer_Click(object sender, EventArgs e)
