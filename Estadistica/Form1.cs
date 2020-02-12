@@ -25,7 +25,23 @@ namespace Estadistica
         private void btnencontrara_Click(object sender, EventArgs e)
         {
             //split = divide una cadena en base a un delimitador (patron) y devuelve una matriz
-            lblAnswerSerie.Text = "LA MEDIA DE X ES: " +objEstadistica.Media(txtSerie.Text.Split(',')).ToString();
+            lblAnswer.Text = "X=: " +objEstadistica.Media(txtSerie.Text.Split(',')).ToString();
+        }
+
+        private void btnencontrar_Click(object sender, EventArgs e)
+        {
+            lblAnswer.Text = "X=: " +  objEstadistica.tipica(txtSerie.Text.Split(',')).ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblAnswer.Text = "X=: " +
+              Math.Round(objEstadistica.Armonica(txtSerie.Text.Split(',')), 2).ToString();
+        }
+
+        private void lblAnswer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
