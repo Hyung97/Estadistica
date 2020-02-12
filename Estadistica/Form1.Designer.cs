@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblAnswerSerie = new System.Windows.Forms.Label();
             this.btnencontrara = new System.Windows.Forms.Button();
             this.txtSerie = new System.Windows.Forms.TextBox();
@@ -37,28 +38,34 @@
             // lblAnswerSerie
             // 
             this.lblAnswerSerie.AutoSize = true;
+            this.lblAnswerSerie.BackColor = System.Drawing.Color.Transparent;
             this.lblAnswerSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnswerSerie.Location = new System.Drawing.Point(70, 84);
+            this.lblAnswerSerie.ForeColor = System.Drawing.Color.White;
+            this.lblAnswerSerie.Location = new System.Drawing.Point(20, 132);
             this.lblAnswerSerie.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblAnswerSerie.Name = "lblAnswerSerie";
-            this.lblAnswerSerie.Size = new System.Drawing.Size(20, 24);
+            this.lblAnswerSerie.Size = new System.Drawing.Size(29, 24);
             this.lblAnswerSerie.TabIndex = 15;
-            this.lblAnswerSerie.Text = "?";
+            this.lblAnswerSerie.Text = "X:";
             // 
             // btnencontrara
             // 
+            this.btnencontrara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnencontrara.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnencontrara.Location = new System.Drawing.Point(341, 17);
+            this.btnencontrara.ForeColor = System.Drawing.Color.Black;
+            this.btnencontrara.Location = new System.Drawing.Point(351, 18);
             this.btnencontrara.Margin = new System.Windows.Forms.Padding(1);
             this.btnencontrara.Name = "btnencontrara";
             this.btnencontrara.Size = new System.Drawing.Size(126, 35);
             this.btnencontrara.TabIndex = 14;
             this.btnencontrara.Text = "Calcular X";
-            this.btnencontrara.UseVisualStyleBackColor = true;
+            this.btnencontrara.UseVisualStyleBackColor = false;
             // 
             // txtSerie
             // 
+            this.txtSerie.BackColor = System.Drawing.Color.Black;
             this.txtSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSerie.ForeColor = System.Drawing.Color.White;
             this.txtSerie.Location = new System.Drawing.Point(102, 20);
             this.txtSerie.Margin = new System.Windows.Forms.Padding(1);
             this.txtSerie.Name = "txtSerie";
@@ -68,7 +75,9 @@
             // lblSerie
             // 
             this.lblSerie.AutoSize = true;
+            this.lblSerie.BackColor = System.Drawing.Color.Transparent;
             this.lblSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSerie.ForeColor = System.Drawing.Color.White;
             this.lblSerie.Location = new System.Drawing.Point(20, 23);
             this.lblSerie.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblSerie.Name = "lblSerie";
@@ -80,13 +89,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 261);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(487, 244);
             this.Controls.Add(this.lblAnswerSerie);
             this.Controls.Add(this.btnencontrara);
             this.Controls.Add(this.txtSerie);
             this.Controls.Add(this.lblSerie);
             this.Name = "Form1";
             this.Text = "Cálculos Básicos Estadisticas";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
